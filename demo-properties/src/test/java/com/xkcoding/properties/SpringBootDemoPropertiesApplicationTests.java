@@ -12,5 +12,13 @@ public class SpringBootDemoPropertiesApplicationTests {
     @Test
     public void contextLoads() {
     }
-
+    @Test
+    public void test1(){
+        Integer a = 100;
+        Integer b = 100;
+        Integer c = 999;
+        Integer d = 999;
+        System.out.print(a.equals(b));
+        System.out.printf("");
+    }
 }

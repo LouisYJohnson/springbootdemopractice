@@ -27,7 +27,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-
+<!--由于端点的信息和产生的交互都是非常敏感的，必须防止未经授权的外部访问。-->
+<!--如果您的应用程序中存在Spring Security的依赖，则默认情况下使用基于表单的HTTP身份验证来保护端点。-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
