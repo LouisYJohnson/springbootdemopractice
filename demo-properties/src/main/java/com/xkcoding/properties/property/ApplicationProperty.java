@@ -15,6 +15,9 @@ import org.springframework.stereotype.Component;
 @Data
 @Component
 public class ApplicationProperty {
+//@Value和@ConfigurationProperties是两种读取配置文件的方法,可以切换使用
+//    如果使用@ConfigurationProperties,类中的属性需要和配置文件中的一致才能够对应上
+
     @Value("${application.name}")
     private String name;
     @Value("${application.version}")

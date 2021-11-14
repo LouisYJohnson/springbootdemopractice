@@ -2,6 +2,11 @@ server:
   port: 8080
   servlet:
     context-path: /demo
+#https://www.cnblogs.com/jingmoxukong/p/10151785.html
+#一个应用为了在不同的环境下工作，常常会有不同的配置，代码逻辑处理。Spring Boot 对此提供了简便的支持。
+# 此处的prod对应的就是application-prod这个配置文件
+#在配置文件中定义导入哪个子配置文件中的配置,这样做可以很好的将环境变量分开
+# 注意命名规范：application-xxx.yml 因为项目去默认加载配置文件的时候会有这个格式要求。
 spring:
   profiles:
     active: prod
