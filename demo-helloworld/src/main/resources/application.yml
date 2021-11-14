@@ -1,4 +1,8 @@
+# server 设置tomcat
 server:
+  # port为端口号
   port: 8080
   servlet:
+    # context-path表示启动路径，
+    # 这里是/demo，那么本机想要访问这个tomcat容器的url为‘localhost:8080/demo’后面接各种方法映射的名字即可
     context-path: /demo
