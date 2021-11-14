@@ -1,4 +1,7 @@
 application:
+#SpringBoot配置文件（yml或properties）使用pom中的变量
+#  https://binbean.github.io/post/springboot%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6yml%E6%88%96properties%E4%BD%BF%E7%94%A8pom.xml%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F/
+#  需要在pom.xml中增加设置从而让maven能够渲染yml,这样maven就能够操控yml了
   name: dev环境 @artifactId@
   version: dev环境 @version@
 developer:
